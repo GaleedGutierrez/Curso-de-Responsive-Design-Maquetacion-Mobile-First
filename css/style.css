@@ -8,15 +8,15 @@
 
 :root {
     /* Colores */
-    --bitcoin-orange: #F7931A;
-    --soft-orange: #FFE9D5;
-    --secundary-blue: #1A9AF7;
-    --soft-blue: #E7F5FF;
-    --warm-black: #201E1C;
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secundary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #201e1c;
     --black: #282623;
-    --grey: #BABABA;
-    --off-white: #FAF8F7;
-    --just-white: #FFFFFF;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #ffffff;
 }
 
 * {
@@ -27,6 +27,36 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 3.2rem;
+    height: 33.4rem;
+    text-align: center;
+}
+
+.header__img-container {
+    width: 15rem;
+    height: 2.4rem;
+    margin-top: 6rem;
+    align-self: center;
+}
+
+.header__title-container {
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    height: 21.8rem;
+    margin-top: 4rem;
+    align-self: center;
+}
