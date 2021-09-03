@@ -28,7 +28,7 @@
 html {
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
-    min-width: 320px;
+    min-width: 32rem;
 
 }
 
@@ -155,4 +155,43 @@ img {
     font-weight: 500;
     line-height: 1.6rem;
     color: #757575;
+}
+
+.main-currency-table {
+    width: 70%;
+    min-width: 23.5rem;
+    max-width: 50rem;
+    height: 36rem;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+.main-currency-table__title {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+}
+
+.main-currency-table__container {
+    width: 90%;
+    min-width: 23rem;
+    max-width: 30rem;
+    height: 25rem;
+    margin: 0 auto;
+}
+
+.main-currency-table__table {
+    width: 100%;
+    height: 100%;
+}
+
+.table__td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
 }
