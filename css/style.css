@@ -28,7 +28,7 @@
 html {
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
-    min-width: 32rem;
+    min-width: 320px;
 
 }
 
@@ -125,4 +125,34 @@ img {
     min-width: 28.8rem;
     max-width: 90rem;
     margin: 0 auto;
+}
+
+.main-exchange-container__background-img-container {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.main-exchange-container__background-img {
+    width: 100%;
+    height: 100%;
+    background: url("../assets/images/Bitcoin.svg") no-repeat center;
+    background-size: cover;
+}
+
+.main-exchange-container__h2 {
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main-exchange-container__p {
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
 }
