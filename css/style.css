@@ -465,3 +465,15 @@ img {
     color: var(--grey-texts);
 }
 
+.plans-container__card {
+    position: relative;
+    width: 70%;
+    min-width: 23rem;
+    max-width: 30rem;
+    height: 25rem;
+    margin: 5rem auto 0;
+    padding: 0 1.5rem;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
