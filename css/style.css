@@ -15,6 +15,7 @@
     --warm-black: #201e1c;
     --black: #282623;
     --grey: #bababa;
+    --grey-texts: #757575;
     --off-white: #faf8f7;
     --just-white: #ffffff;
     --grey-product-detail-text: #808080;
@@ -155,7 +156,7 @@ img {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
-    color: #757575;
+    color: var(--grey-texts);
 }
 
 .main-currency-table,
@@ -224,7 +225,7 @@ img {
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.7rem;
-    color: #757575;
+    color: var(--grey-texts);
 }
 
 .main-currency-table__container .down,
@@ -435,3 +436,32 @@ img {
     line-height: 1.6rem;
     color: var(--just-white);
 }
+
+.main-plans-container {
+    width: 100%;
+    padding: 6.4rem 0;
+    text-align: center;
+}
+
+.plans__title {
+    width: 90%;
+    min-width: 28.8rem;
+    height: auto;
+    margin: 0 auto 5rem;
+}
+
+.plans-title__main {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plans-title__second {
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey-texts);
+}
+
