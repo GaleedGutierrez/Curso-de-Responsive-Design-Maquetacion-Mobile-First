@@ -17,6 +17,7 @@
     --grey: #bababa;
     --off-white: #faf8f7;
     --just-white: #ffffff;
+    --grey-product-text: #808080;
 }
 
 * {
@@ -323,4 +324,45 @@ img {
     overflow-x: scroll;
     width: 23.5rem;
     margin: 0 auto;
+}
+
+.main__product-detail {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    background-color: var(--warm-black);
+}
+
+.product-detail__batata-logo {
+    position: absolute;
+    top: -1rem;
+    left: calc(50% - 2rem);
+    width: 4rem;
+    height: 2.5rem;
+    background: url("../assets/images/papita.svg") no-repeat center;
+}
+
+.product-detail__title {
+    width: 90%;
+    min-width: 28.8rem;
+    height: auto;
+    margin: 5rem auto 0;
+    text-align: center;
+}
+
+.product-detail-title__main {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.product-detail-title__second {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey-product-text);
 }
