@@ -217,7 +217,7 @@ img {
     border-radius: 0 0 15px 0;
 }
 
-.main-currency-table__container .table--right, 
+.main-currency-table__container .table--right,
 .commission-price {
     font-size: 1.4rem;
     font-weight: normal;
@@ -249,7 +249,6 @@ img {
 .main-commission-table__container {
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(2, 1fr);
-    /* grid-gap: 1rem; */
     align-items: center;
     border-radius: 15px;
     background-color: var(--just-white);
@@ -293,4 +292,35 @@ img {
 .exchanche-text--bottom-right {
     border-top: 1px solid var(--off-white);
     border-left: 1px solid var(--off-white);
+}
+
+.main-table__date {
+    width: 19rem;
+    height: 3rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+
+.table-date__text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+}
+
+.main-currency-table__date--orange {
+    background-color: var(--soft-orange);
+}
+
+.main-exchange-table__date--blue {
+    background-color: var(--soft-blue);
+}
+
+.main-tables-container {
+    display: flex;
+    overflow-x: scroll;
+    width: 23.5rem;
+    margin: 0 auto;
 }
