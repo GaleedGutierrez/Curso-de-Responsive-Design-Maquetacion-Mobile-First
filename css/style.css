@@ -323,9 +323,9 @@ img {
 
 .main-tables-container {
     display: flex;
-    width: 29rem;
-    margin: 0 auto;
     overflow-x: scroll;
+    width: 23.5rem;
+    margin: 0 auto;
 }
 
 .main__product-detail {
