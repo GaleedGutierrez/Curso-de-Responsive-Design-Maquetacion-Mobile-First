@@ -4,6 +4,7 @@ html {
 
 .main-tables-container {
     max-width: 93rem;
+    overflow-x: auto;
 }
 
 .product-cards__container {
@@ -14,5 +15,6 @@ html {
 }
 
 .plans-container__slider {
+    overflow-x: auto;
     justify-content: center;
 }
