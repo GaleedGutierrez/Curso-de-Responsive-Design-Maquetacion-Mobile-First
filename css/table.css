@@ -1,0 +1,18 @@
+html {
+    font-size: 80%  ;
+}
+
+.main-tables-container {
+    max-width: 93rem;
+}
+
+.product-cards__container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 93rem;
+    margin: 0 auto;
+}
+
+.plans-container__slider {
+    justify-content: center;
+}
