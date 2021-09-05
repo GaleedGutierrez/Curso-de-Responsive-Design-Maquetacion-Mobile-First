@@ -10,7 +10,7 @@ html {
 .product-cards__container {
     display: flex;
     flex-flow: row wrap;
-    width: 93rem;
+    max-width: 93rem;
     margin: 0 auto;
 }
 
