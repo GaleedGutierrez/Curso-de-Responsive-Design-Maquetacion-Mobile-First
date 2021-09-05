@@ -425,7 +425,7 @@ img {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: var(--grey-product-detail-text);
+    color: #cac9c9;
 }
 
 .bitcoin-img-container {
@@ -597,4 +597,9 @@ img {
 
 .list-item__social-media {
     color: var(--just-white);
+}
+
+.right__img-container {
+    width: 6.4rem;
+    height: 5rem;
 }
