@@ -109,6 +109,8 @@ img {
     background: url("../assets/icons/arrow.svg") no-repeat center;
 }
 
+/*Start main*/
+
 .main {
     width: 100%;
     height: auto;
@@ -166,6 +168,7 @@ img {
     min-width: 23.5rem;
     max-width: 50rem;
     height: 36rem;
+    scroll-snap-align: center;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
@@ -324,25 +327,12 @@ img {
 
 .main-tables-container {
     display: flex;
-    width: 29rem;
+    width: 86%;
     /* gap: 29rem; implementar cuando lleguemos al 95%*/
     margin: 0 auto;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-}
-
-.main-exchange-container__table-container,
-.main-exchange-container__table-container {
-    scroll-snap-align: center;
-}
-
-.main-exchange-container__table-container {
-    margin-right: 0.5rem;
-}
-
-.main-exchange-container__table-container {
-    margin-left: 0.5rem;
 }
 
 .main__product-detail {
