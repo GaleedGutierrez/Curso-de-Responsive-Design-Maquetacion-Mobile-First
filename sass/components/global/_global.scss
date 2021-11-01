@@ -23,3 +23,10 @@ img,
 svg {
     width: 100%;
 }
+
+.arrow {
+    display: inline-grid;
+    place-items: center;
+    width: 1.2rem;
+    height: 0.741rem;
+}

@@ -1,0 +1,17 @@
+.logo-container {
+    display: inline-flex;
+    gap: 0.8rem;
+    align-items: center;
+    width: 12.9rem;
+    height: 2.4rem;
+}
+
+.logo__batata-icon {
+    width: 4.1rem;
+}
+
+.logo__title {
+    font-size: $large;
+    font-weight: bold;
+    color: $bitcoin-orange;
+}
