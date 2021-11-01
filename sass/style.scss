@@ -1,2 +1,75 @@
 @import "./components/global/global";
 @import "./components/global/header";
+@import "./components/cards-price/cards-price";
+
+.main__exchange-container {
+    flex-direction: column;
+    position: relative;
+    padding: 0 1.6rem;
+    padding-block-start: 6rem;
+    text-align: center;
+    background-color: $off-white;
+    @include all-center-flex;
+}
+
+.main__exchange-bitcoin-image {
+    width: 19.5rem;
+    margin-block-end: 4rem;
+}
+
+.main__exchange-info-container {
+    margin-block-end: 4.8rem;
+}
+
+.main__exchange-info-title {
+    margin-block-end: 2.4rem;
+    font-size: $large;
+    font-weight: bold;
+}
+
+.main__exchange-info-subtitle {
+    font-weight: 500;
+    color: $gray;
+}
+
+.main__exchange-price-list-cointainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    overflow-x: hidden;
+}
+
+.currency-table-container {
+    width: 20rem;
+    transition: 500ms;
+}
+
+.currency-table-container:last-child {
+    position: absolute;
+    transform: translateX(100vw);
+    transition: 600ms;
+}
+
+.exchange-price-list__arrow-rigth {
+    position: absolute;
+    top: calc(50% - 0.3415rem);
+    left: 90%;
+    transform: rotate(270deg);
+}
+
+.exchange-price-list__arrow-left {
+    position: absolute;
+    top: calc(50% - 0.3415rem);
+    left: 5%;
+    transform: rotate(90deg);
+}
+
+.exchange-price-list__arrow-rigth:hover ~ .currency-table-container:last-child {
+    transform: translateX(0);
+}
+
+.exchange-price-list__arrow-rigth:hover ~ .currency-table-container:nth-child(3) {
+    transform: translateX(-100vw);
+}

@@ -1,0 +1,102 @@
+.currency-table__type-coin,
+.currency-table__price-arrow-container {
+    display: grid;
+    grid-template-rows: repeat(4, 4rem);
+    place-items: center;
+    color: $gray;
+}
+
+.currency-table__type {
+    margin-block-end: 1.2rem;
+    font-size: $medium;
+    font-weight: bold;
+    text-align: start;
+    color: $bitcoin-orange;
+}
+
+.currency-table__type--blue {
+    color: $secondary-blue;
+}
+
+.currency-table {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    border-radius: 0.8rem;
+    background-color: $just-white;
+    // grid-template-rows: repeat(4, 3.9rem);
+}
+
+.currency-table__type-coin {
+    justify-items: start;
+}
+
+.currency-table__coin-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    &:nth-child(1) {
+        border-block-end: 0.05rem solid $off-white;
+        border-inline-end: 0.05rem solid $off-white;
+    }
+
+    &:nth-child(2), &:nth-child(3) {
+        border-block-start: 0.05rem solid $off-white;
+        border-block-end: 0.05rem solid $off-white;
+        border-inline-end: 0.05rem solid $off-white;
+    }
+
+    &:nth-child(4) {
+        border-block-start: 0.05rem solid $off-white;
+        border-inline-end: 0.05rem solid $off-white;
+    }
+}
+
+.currency-table__price-arrow {
+    justify-content: center;
+    gap: 0.8rem;
+    &:nth-child(1) {
+        border-inline-start: 0.05rem solid $off-white;
+    }
+    
+    &:nth-child(2), &:nth-child(3) {
+        border-inline-start: 0.05rem solid $off-white;
+    }
+    
+    &:nth-child(4) {
+        border-inline-start: 0.05rem solid $off-white;
+    }
+
+    @extend .currency-table__coin-container;
+}
+
+.currency-table__coin {
+    display: inline-block;
+    margin-inline-start: 1.2rem;
+}
+
+.currency-table__price {
+    display: inline-block;
+}
+
+.trending-arrow {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.currency-table__update {
+    height: 3.1rem;
+    padding: 0.8rem;
+    margin-block-start: 1.6rem;
+    border-radius: 0.8rem;
+    font-family: $font-secondary;
+    font-size: $extra-small;
+    background-color: $soft-orange;
+}
+
+.currency-table__update--blue {
+    background-color: $soft-blue;
+}

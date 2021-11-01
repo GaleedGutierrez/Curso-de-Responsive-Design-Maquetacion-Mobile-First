@@ -4,3 +4,13 @@ block head
     +titles("Batabit")
 block main
     main.main
+        section.main__exchange-container
+            +figure-img("1KlMnVbKx2m4051aIbc6yFLTOc6nR9GPv", "Bitcoin image").main__exchange-bitcoin-image
+            .main__exchange-info-container
+                h2.main__exchange-info-title Visibilizamos todas las tasas de cambio.
+                p.main__exchange-info-subtitle Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.
+            .main__exchange-price-list-cointainer 
+                +arrow.exchange-price-list__arrow-left
+                +arrow.exchange-price-list__arrow-rigth
+                +table-price-coin("Monedas", "19 de Julio 23:45", "true")
+                +table-price-coin("Comisiones", "19 de Julio 23:48", "false")

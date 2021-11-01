@@ -1,120 +1,339 @@
 a {
-  color: #201E1C;
+    color: #201E1C;
 }
 
 p, a {
-  font-size: 1.4rem;
+    font-size: 1.4rem;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  outline: none;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 img,
 svg {
-  width: 100%;
+    width: 100%;
 }
 
 .arrow {
-  display: -ms-inline-grid;
-  display: inline-grid;
-  place-items: center;
-  width: 1.2rem;
-  height: 0.741rem;
+    display: -ms-inline-grid;
+    display: inline-grid;
+    place-items: center;
+    width: 1.2rem;
+    height: 0.741rem;
 }
 
 .logo-container {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  gap: 0.8rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 12.9rem;
-  height: 2.4rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    gap: 0.8rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 12.9rem;
+    height: 2.4rem;
 }
 
 .logo__batata-icon {
-  width: 4.1rem;
+    width: 4.1rem;
 }
 
 .logo__title {
-  font-size: 2.4rem;
-  font-weight: bold;
-  color: #F7931A;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #F7931A;
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  width: 100%;
-  padding: 4rem 1.6rem 0;
-  text-align: center;
-  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
-  color: #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 4rem 1.6rem 0;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    color: #FFFFFF;
 }
 
 .header__logo-container {
-  -webkit-margin-after: 3.2rem;
-          margin-block-end: 3.2rem;
+    -webkit-margin-after: 3.2rem;
+            margin-block-end: 3.2rem;
 }
 
 .header__title {
-  -webkit-margin-after: 2.4rem;
-          margin-block-end: 2.4rem;
-  font-size: 2.4rem;
-  font-weight: bold;
+    -webkit-margin-after: 2.4rem;
+            margin-block-end: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: bold;
 }
 
 .header__subtitle {
-  -webkit-margin-after: 6rem;
-          margin-block-end: 6rem;
-  font-weight: 500;
+    -webkit-margin-after: 6rem;
+            margin-block-end: 6rem;
+    font-weight: 500;
 }
 
 .header__button {
-  gap: 1.6rem;
-  position: absolute;
-  top: calc(100% - 2.4rem);
-  left: calc(50% - 11.45rem);
-  width: 22.9rem;
-  height: 4.8rem;
-  border-radius: 0.4rem;
-  font-weight: bold;
-  background-color: #FAF8F7;
-  -webkit-box-shadow: 0rem 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
-          box-shadow: 0rem 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    gap: 1.6rem;
+    position: absolute;
+    z-index: 1;
+    top: calc(100% - 2.4rem);
+    left: calc(50% - 11.45rem);
+    width: 22.9rem;
+    height: 4.8rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0rem 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+            box-shadow: 0rem 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.currency-table__type-coin,
+.currency-table__price-arrow-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (4rem)[4];
+    grid-template-rows: repeat(4, 4rem);
+    place-items: center;
+    color: #757575;
+}
+
+.currency-table__type {
+    -webkit-margin-after: 1.2rem;
+            margin-block-end: 1.2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: start;
+    color: #F7931A;
+}
+
+.currency-table__type--blue {
+    color: #1A9AF7;
+}
+
+.currency-table {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+    grid-template-columns: repeat(2, auto);
+    border-radius: 0.8rem;
+    background-color: #FFFFFF;
+}
+
+.currency-table__type-coin {
+    justify-items: start;
+}
+
+.currency-table__coin-container, .currency-table__price-arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.currency-table__coin-container:nth-child(1), .currency-table__price-arrow:nth-child(1) {
+    -webkit-border-after: 0.05rem solid #FAF8F7;
+            border-block-end: 0.05rem solid #FAF8F7;
+    -webkit-border-end: 0.05rem solid #FAF8F7;
+            border-inline-end: 0.05rem solid #FAF8F7;
+}
+.currency-table__coin-container:nth-child(2), .currency-table__price-arrow:nth-child(2), .currency-table__coin-container:nth-child(3), .currency-table__price-arrow:nth-child(3) {
+    -webkit-border-before: 0.05rem solid #FAF8F7;
+            border-block-start: 0.05rem solid #FAF8F7;
+    -webkit-border-after: 0.05rem solid #FAF8F7;
+            border-block-end: 0.05rem solid #FAF8F7;
+    -webkit-border-end: 0.05rem solid #FAF8F7;
+            border-inline-end: 0.05rem solid #FAF8F7;
+}
+.currency-table__coin-container:nth-child(4), .currency-table__price-arrow:nth-child(4) {
+    -webkit-border-before: 0.05rem solid #FAF8F7;
+            border-block-start: 0.05rem solid #FAF8F7;
+    -webkit-border-end: 0.05rem solid #FAF8F7;
+            border-inline-end: 0.05rem solid #FAF8F7;
+}
+
+.currency-table__price-arrow {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0.8rem;
+}
+.currency-table__price-arrow:nth-child(1) {
+    -webkit-border-start: 0.05rem solid #FAF8F7;
+            border-inline-start: 0.05rem solid #FAF8F7;
+}
+.currency-table__price-arrow:nth-child(2), .currency-table__price-arrow:nth-child(3) {
+    -webkit-border-start: 0.05rem solid #FAF8F7;
+            border-inline-start: 0.05rem solid #FAF8F7;
+}
+.currency-table__price-arrow:nth-child(4) {
+    -webkit-border-start: 0.05rem solid #FAF8F7;
+            border-inline-start: 0.05rem solid #FAF8F7;
+}
+
+.currency-table__coin {
+    display: inline-block;
+    -webkit-margin-start: 1.2rem;
+            margin-inline-start: 1.2rem;
+}
+
+.currency-table__price {
+    display: inline-block;
+}
+
+.trending-arrow {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.currency-table__update {
+    height: 3.1rem;
+    padding: 0.8rem;
+    -webkit-margin-before: 1.6rem;
+            margin-block-start: 1.6rem;
+    border-radius: 0.8rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    background-color: #FFE9D5;
+}
+
+.currency-table__update--blue {
+    background-color: #E7F5FF;
+}
+
+.main__exchange-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    padding: 0 1.6rem;
+    -webkit-padding-before: 6rem;
+            padding-block-start: 6rem;
+    text-align: center;
+    background-color: #FAF8F7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.main__exchange-bitcoin-image {
+    width: 19.5rem;
+    -webkit-margin-after: 4rem;
+            margin-block-end: 4rem;
+}
+
+.main__exchange-info-container {
+    -webkit-margin-after: 4.8rem;
+            margin-block-end: 4.8rem;
+}
+
+.main__exchange-info-title {
+    -webkit-margin-after: 2.4rem;
+            margin-block-end: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.main__exchange-info-subtitle {
+    font-weight: 500;
+    color: #757575;
+}
+
+.main__exchange-price-list-cointainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    overflow-x: hidden;
+}
+
+.currency-table-container {
+    width: 20rem;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+}
+
+.currency-table-container:last-child {
+    position: absolute;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+    -webkit-transition: 600ms;
+    transition: 600ms;
+}
+
+.exchange-price-list__arrow-rigth {
+    position: absolute;
+    top: calc(50% - 0.3415rem);
+    left: 90%;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+}
+
+.exchange-price-list__arrow-left {
+    position: absolute;
+    top: calc(50% - 0.3415rem);
+    left: 5%;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+
+.exchange-price-list__arrow-rigth:hover ~ .currency-table-container:last-child {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.exchange-price-list__arrow-rigth:hover ~ .currency-table-container:nth-child(3) {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
 }
