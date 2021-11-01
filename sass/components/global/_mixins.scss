@@ -1,5 +1,5 @@
-@mixin hundread-percent-height {
-    html, body, main {
-        height: 100%;
-    }
+@mixin all-center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

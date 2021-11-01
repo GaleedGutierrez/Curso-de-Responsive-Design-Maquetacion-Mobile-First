@@ -1,3 +1,11 @@
+a {
+  color: #201E1C;
+}
+
+p, a {
+  font-size: 1.4rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,4 +27,94 @@ body {
 img,
 svg {
   width: 100%;
+}
+
+.arrow {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  place-items: center;
+  width: 1.2rem;
+  height: 0.741rem;
+}
+
+.logo-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 0.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12.9rem;
+  height: 2.4rem;
+}
+
+.logo__batata-icon {
+  width: 4.1rem;
+}
+
+.logo__title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #F7931A;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 4rem 1.6rem 0;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  color: #FFFFFF;
+}
+
+.header__logo-container {
+  -webkit-margin-after: 3.2rem;
+          margin-block-end: 3.2rem;
+}
+
+.header__title {
+  -webkit-margin-after: 2.4rem;
+          margin-block-end: 2.4rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.header__subtitle {
+  -webkit-margin-after: 6rem;
+          margin-block-end: 6rem;
+  font-weight: 500;
+}
+
+.header__button {
+  gap: 1.6rem;
+  position: absolute;
+  top: calc(100% - 2.4rem);
+  left: calc(50% - 11.45rem);
+  width: 22.9rem;
+  height: 4.8rem;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  background-color: #FAF8F7;
+  -webkit-box-shadow: 0rem 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+          box-shadow: 0rem 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
