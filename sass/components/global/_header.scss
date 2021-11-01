@@ -30,13 +30,14 @@
 .header__button {
     gap: 1.6rem;
     position: absolute;
+    z-index: 1;
     top: calc(100% - 2.4rem);
     left: calc(50% - 11.45rem);
     width: 22.9rem;
     height: 4.8rem;
     border-radius: 0.4rem;
     font-weight: bold;
-    background-color: $off-white;
+    background-color: $just-white;
     box-shadow: 0rem 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
     @include all-center-flex;
 }

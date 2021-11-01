@@ -27,3 +27,67 @@ mixin arrow
         svg(viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg")
             path(d="M1.91 0.590027L6.5 5.17003L11.09 0.590027L12.5 2.00003L6.5 8.00003L0.5 2.00003L1.91 0.590027Z" fill="#201E1C")
 
+mixin treding-up-arrow
+    figure.trending-up-arrow-image.trending-arrow
+        svg(viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+            path(d="M11.5 3L6.75 7.75L4.25 5.25L0.5 9" stroke="#07D635" stroke-linecap="round" stroke-linejoin="round")
+            path(d="M8.5 3H11.5V6" stroke="#07D635" stroke-linecap="round" stroke-linejoin="round")
+
+mixin treding-down-arrow
+    figure.trending-down-arrow-image.trending-arrow
+        svg(viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg")
+            path(d="M11.5 9.5L6.75 4.75L4.25 7.25L0.5 3.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round")
+            path(d="M8.5 9.5H11.5V6.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round")
+
+mixin table-price-coin(type, date, arrow)
+    .currency-table-container
+        if arrow=="true"
+            p.currency-table__type=type
+        else 
+            p.currency-table__type.currency-table__type--blue=type
+        +table-coins-comisions(arrow)
+        if arrow=="true"
+            p.currency-table__update 
+                strong Actualizado
+                span : #{date}
+        else 
+            p.currency-table__update.currency-table__update--blue 
+                strong Actualizado
+                span : #{date}
+
+mixin table-coins-comisions(arrow)
+    .currency-table 
+        .currency-table__type-coin
+            .currency-table__coin-container
+                p.currency-table__coin Bitcoin
+            .currency-table__coin-container    
+                p.currency-table__coin Ethereum
+            .currency-table__coin-container    
+                p.currency-table__coin Ripple
+            .currency-table__coin-container    
+                p.currency-table__coin Stellar
+
+        if arrow=="true"
+            .currency-table__price-arrow-container
+                .currency-table__price-arrow
+                    p.currency-table__price $1.92
+                    +treding-down-arrow
+                .currency-table__price-arrow
+                    p.currency-table__price $0.07
+                    +treding-up-arrow
+                .currency-table__price-arrow
+                    p.currency-table__price $2.15
+                    +treding-down-arrow
+                .currency-table__price-arrow
+                    p.currency-table__price $4.96
+                    +treding-down-arrow
+        else 
+            .currency-table__type-coin
+                .currency-table__price-arrow
+                    p.currency-table__comision $12.96
+                .currency-table__price-arrow
+                    p.currency-table__comision $13.07
+                .currency-table__price-arrow
+                    p.currency-table__comision $13.15
+                .currency-table__price-arrow
+                    p.currency-table__comision $14.96
