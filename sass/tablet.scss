@@ -1,0 +1,25 @@
+@import "./components/faq/faq-tablet";
+
+.exchange-price-list__arrow-rigth, 
+.exchange-price-list__arrow-left {
+    display: none;
+} 
+
+.main__exchange-price-list-cointainer {
+    gap: 3.2rem;
+    max-width: initial;
+}
+
+.currency-table-container:last-child {
+    position: static;
+    transform: translateX(0);
+}
+
+.product-details__card-container {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.plans-container__slider {
+    gap: 2rem;
+    justify-content: center;
+}
