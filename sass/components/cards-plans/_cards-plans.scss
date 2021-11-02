@@ -1,0 +1,65 @@
+.card-price-container__dollar-sign,
+.plans-container__card-price {
+    font-family: $font-secondary;
+}
+
+.card-price-container__dollar-sign,
+.plans-container__card-details {
+    font-size: 1.2rem;
+}
+
+.plans-container__card-price-container,
+.plans-container__card-details {
+    margin-block-end: 1.6rem;
+}
+
+.plans-container__card {
+    position: relative;
+    padding: 3.2rem 1.6rem 2.4rem;
+    border-radius: 0.8rem;
+    background-color: $just-white;
+    scroll-snap-align: center;
+}
+
+.plans-container__card-recomended {
+    position: absolute;
+    top: calc(0% - 1.6rem);
+    right: calc(50% - 5.0165rem);
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    font-size: $extra-small;
+    font-weight: bold;
+    color: $just-white;
+    background-color: $bitcoin-orange;
+}
+
+.plans-container__card-type-pay {
+    margin-block-end: 2rem;
+}
+
+.card-price-container__dollar-sign {
+    vertical-align: top;
+}
+
+.plans-container__card-price {
+    display: inline-block;
+    font-size: $extra-large;
+    line-height: 4.1rem;
+}
+
+.plans-container__card-details {
+    color: $gray;
+}
+
+.plans-container__card-call-to-action {
+    gap: 1.2rem;
+    padding: 1.6rem;
+    border: 0.2rem solid $bitcoin-orange;
+    border-radius: 0.8rem;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: $small;
+    color: $warm-black;
+    background-color: $off-white;
+    @include all-center-flex;
+}

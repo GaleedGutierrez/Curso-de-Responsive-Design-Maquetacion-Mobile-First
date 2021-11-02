@@ -9,14 +9,11 @@
     list-style: none;
     text-decoration: none;
     outline: none;
+    font-family: $font-primary;
 }
 
 html {
     font-size: 62.5%;
-}
-
-body {
-    font-family: $font-primary;
 }
 
 img,
@@ -29,4 +26,9 @@ svg {
     place-items: center;
     width: 1.2rem;
     height: 0.741rem;
+}
+
+.arrow-right-orange {
+    width: 1.6rem;
+    height: 1.6rem;
 }

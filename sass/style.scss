@@ -1,6 +1,9 @@
 @import "./components/global/global";
 @import "./components/global/header";
 @import "./components/cards-price/cards-price";
+@import "./components/cards-about-page/cards-about-page";
+@import "./components/cards-plans/cards-plans";
+
 
 .main__exchange-container {
     flex-direction: column;
@@ -20,14 +23,7 @@
     margin-block-end: 4.8rem;
 }
 
-.main__exchange-info-title {
-    margin-block-end: 2.4rem;
-    font-size: $large;
-    font-weight: bold;
-}
-
 .main__exchange-info-subtitle {
-    font-weight: 500;
     color: $gray;
 }
 
@@ -110,32 +106,6 @@
     gap: 1.6rem;
 }
 
-.product-detail__card {
-    width: 100%;
-    height: auto;
-    padding: 2rem;
-    border-radius: 0.8rem;
-    background-color: $warm-black-plus-1;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-}
-
-.product-detail__card-icon {
-    width: 2.4rem;
-    height: 2.4rem;
-}
-
-.product-detail__card-title {
-    margin: 1.2rem 0;
-    font-size: $medium;
-    text-align: start;
-    color: $just-white;
-}
-
-.product-detail__card-info {
-    text-align: start;
-    color: $warm-gray;
-}
-
 /* Start bitcoin baby */
 
 .main__bitcoin-baby-container {
@@ -147,10 +117,35 @@
 }
 
 .bitcoin-baby__title {
-    font-size: $large;
-    font-weight: bold;
+    margin: 0;
     text-align: center;
     color: $just-white;
 }
 
 /* Start plans section */
+
+.main__plans-container {
+    padding: 8rem 1.6rem 6.4rem;
+    text-align: center;
+    background-color: $off-white;
+}
+
+.main__plans-titles-container {
+    margin-block-end: 4.8rem;
+}
+
+.main__plans-subtitle {
+    color: $gray;
+}
+
+.plans-container__slider {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(19rem, 22.3rem));
+    grid-template-rows: 25.4rem;
+    align-content: center;
+    gap: 0.8rem;
+    height: 28.8rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
