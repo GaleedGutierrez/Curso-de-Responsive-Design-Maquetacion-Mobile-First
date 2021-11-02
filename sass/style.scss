@@ -4,6 +4,7 @@
 @import "./components/cards-about-page/cards-about-page";
 @import "./components/cards-plans/cards-plans";
 @import "./components/faq/faq";
+@import "./components/global/footer";
 
 
 .main__exchange-container {
@@ -83,8 +84,6 @@
     position: absolute;
     top: calc(0% - 1.2005rem);
     left: calc(50% - 2.0285rem);
-    width: 4.057rem;
-    height: 2.401rem;
 }
 
 .product-details__title {
