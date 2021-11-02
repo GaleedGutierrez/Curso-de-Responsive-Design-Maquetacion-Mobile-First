@@ -1,0 +1,31 @@
+.faq__item-container {
+    max-width: 38.4rem;
+}
+
+.exchange-price-list__arrow-rigth,
+.exchange-price-list__arrow-left {
+    display: none;
+}
+
+.main__exchange-price-list-cointainer {
+    gap: 3.2rem;
+    max-width: initial;
+}
+
+.currency-table-container:last-child {
+    position: static;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.product-details__card-container {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.plans-container__slider {
+    gap: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
