@@ -6,11 +6,22 @@ block main
     main.main
         section.main__exchange-container
             +figure-img("1KlMnVbKx2m4051aIbc6yFLTOc6nR9GPv", "Bitcoin image").main__exchange-bitcoin-image
-            .main__exchange-info-container
+            section.main__exchange-info-container
                 h2.main__exchange-info-title Visibilizamos todas las tasas de cambio.
                 p.main__exchange-info-subtitle Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.
-            .main__exchange-price-list-cointainer 
+            section.main__exchange-price-list-cointainer 
                 +arrow.exchange-price-list__arrow-left
                 +arrow.exchange-price-list__arrow-rigth
                 +table-price-coin("Monedas", "19 de Julio 23:45", "true")
                 +table-price-coin("Comisiones", "19 de Julio 23:48", "false")
+        section.main__product-details 
+            +batabit-icon.product-details__batabit-icon
+            section.product-details__title 
+                h2.product-details__title-main Creamos un producto sin comparación.
+                p.product-details__title-secondary Confiable y diseñado para su uso diario.
+            section.product-details__card-container
+                +product-details-card("18O5uL6MME2lJZWpMQHUyLb_fmKR13tFs", "Clock icon", "Tiempo real", "Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.")
+                +product-details-card("1fHn7ILbK9wCW4wc4xJ5b6iiCrA4xZK88", "Eye icon", "No hay tasas escondidas", "Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.")
+                +product-details-card("1iOKXK5nZcIwHFcxZMri8e_rOrdZQFTVm", "Dollar sign icon", "Compara monedas", "Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.")
+                +product-details-card("1zLB6NOyxU0Imp2P-Bh8TwzG4_utzh1te", "Check circle icon", "Información confiable", "Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.")
+        
