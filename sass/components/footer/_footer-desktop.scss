@@ -1,0 +1,11 @@
+$margin-final: 5rem;
+
+.footer__social-media-and-more-container {
+    justify-self: start;
+    margin-inline-start: $margin-final;
+}
+
+.footer__logo-container {
+    justify-self: end;
+    margin-inline-end: $margin-final;
+}
