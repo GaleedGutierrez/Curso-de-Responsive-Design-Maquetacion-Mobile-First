@@ -3,6 +3,7 @@
 @import "./components/cards-price/cards-price";
 @import "./components/cards-about-page/cards-about-page";
 @import "./components/cards-plans/cards-plans";
+@import "./components/faq/faq";
 
 
 .main__exchange-container {
@@ -125,7 +126,7 @@
 /* Start plans section */
 
 .main__plans-container {
-    padding: 8rem 1.6rem 6.4rem;
+    padding: 8rem 1.6rem 0;
     text-align: center;
     background-color: $off-white;
 }
@@ -148,4 +149,12 @@
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+}
+
+/* Start faq section */
+
+.main__faq-items-container {
+    display: grid;
+    justify-content: center;
+    gap: 1.6rem;
 }
