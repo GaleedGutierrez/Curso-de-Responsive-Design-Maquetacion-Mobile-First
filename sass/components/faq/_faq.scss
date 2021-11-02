@@ -1,0 +1,51 @@
+.main__faq-container {
+    padding: 4.8rem 1.6rem 6.4rem;
+    background-color: $off-white;
+    text-align: center;
+}
+
+.main__faq-title {
+    margin-block-end: 3.2rem;
+}
+
+.faq__item-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "question arrow"
+        "answer answer";
+    grid-row-gap: 2.4rem;
+    grid-column-gap: 1rem;
+    align-items: center;
+    text-align: start;
+}
+
+.faq__item-question {
+    grid-area: question;
+}
+
+.faq__item-arrow {
+    grid-area: arrow;
+
+    &:hover path {
+        fill: $bitcoin-orange;
+    }
+
+    &:hover {
+        transform: rotate(180deg);
+    }
+
+}
+
+.faq__item-answer {
+    display: none;
+    grid-area: answer;
+    // width: 28.2rem;
+    font-weight: 400;
+    color: $gray;
+}
+
+.faq__item-arrow:hover + .faq__item-answer {
+    display: initial;
+}

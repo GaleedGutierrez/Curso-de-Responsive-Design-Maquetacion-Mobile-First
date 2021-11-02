@@ -124,3 +124,10 @@ mixin plan-card(recomendado, typePay, price, details)
         button.plans-container__card-call-to-action 
             span Escoger este 
             +arrow-right-orange 
+
+mixin faq-item(question, answer)
+    .faq__item-container 
+        p.faq__item-question=question
+        +arrow.faq__item-arrow 
+        p.faq__item-answer=answer
+
