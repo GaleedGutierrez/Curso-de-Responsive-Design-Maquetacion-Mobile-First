@@ -403,3 +403,20 @@ svg {
 }
 
 /* Start bitcoin baby */
+.main__bitcoin-baby-container {
+    width: 100%;
+    height: 38.7rem;
+    -webkit-padding-before: 6.4rem;
+            padding-block-start: 6.4rem;
+    background: url("https://drive.google.com/uc?id=1DXQxqOvUkvbib5jO7BoazVscFwAfD7F2") no-repeat center;
+    background-size: cover;
+}
+
+.bitcoin-baby__title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Start plans section */
