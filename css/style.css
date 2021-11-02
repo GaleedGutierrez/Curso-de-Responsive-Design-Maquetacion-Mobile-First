@@ -6,6 +6,16 @@ p, a {
     font-size: 1.4rem;
 }
 
+p {
+    font-weight: 500;
+}
+
+.title {
+    -webkit-margin-after: 2.4rem;
+            margin-block-end: 2.4rem;
+    font-size: 2.4rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,14 +24,11 @@ p, a {
     list-style: none;
     text-decoration: none;
     outline: none;
+    font-family: "DM Sans", sans-serif;
 }
 
 html {
     font-size: 62.5%;
-}
-
-body {
-    font-family: "DM Sans", sans-serif;
 }
 
 img,
@@ -35,6 +42,11 @@ svg {
     place-items: center;
     width: 1.2rem;
     height: 0.741rem;
+}
+
+.arrow-right-orange {
+    width: 1.6rem;
+    height: 1.6rem;
 }
 
 .logo-container {
@@ -240,6 +252,109 @@ svg {
     background-color: #E7F5FF;
 }
 
+.product-detail__card {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    background-color: #282623;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail__card-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.product-detail__card-title {
+    margin: 1.2rem 0;
+    font-size: 1.8rem;
+    text-align: start;
+    color: #FFFFFF;
+}
+
+.product-detail__card-info {
+    text-align: start;
+    color: #BABABA;
+}
+
+.card-price-container__dollar-sign,
+.plans-container__card-price {
+    font-family: "Inter", sans-serif;
+}
+
+.card-price-container__dollar-sign,
+.plans-container__card-details {
+    font-size: 1.2rem;
+}
+
+.plans-container__card-price-container,
+.plans-container__card-details {
+    -webkit-margin-after: 1.6rem;
+            margin-block-end: 1.6rem;
+}
+
+.plans-container__card {
+    position: relative;
+    padding: 3.2rem 1.6rem 2.4rem;
+    border-radius: 0.8rem;
+    background-color: #FFFFFF;
+    scroll-snap-align: center;
+}
+
+.plans-container__card-recomended {
+    position: absolute;
+    top: calc(0% - 1.6rem);
+    right: calc(50% - 5.0165rem);
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #F7931A;
+}
+
+.plans-container__card-type-pay {
+    -webkit-margin-after: 2rem;
+            margin-block-end: 2rem;
+}
+
+.card-price-container__dollar-sign {
+    vertical-align: top;
+}
+
+.plans-container__card-price {
+    display: inline-block;
+    font-size: 5.2rem;
+    line-height: 4.1rem;
+}
+
+.plans-container__card-details {
+    color: #757575;
+}
+
+.plans-container__card-call-to-action {
+    gap: 1.2rem;
+    padding: 1.6rem;
+    border: 0.2rem solid #F7931A;
+    border-radius: 0.8rem;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #201E1C;
+    background-color: #FAF8F7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
 .main__exchange-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -271,15 +386,7 @@ svg {
             margin-block-end: 4.8rem;
 }
 
-.main__exchange-info-title {
-    -webkit-margin-after: 2.4rem;
-            margin-block-end: 2.4rem;
-    font-size: 2.4rem;
-    font-weight: bold;
-}
-
 .main__exchange-info-subtitle {
-    font-weight: 500;
     color: #757575;
 }
 
@@ -375,33 +482,6 @@ svg {
     gap: 1.6rem;
 }
 
-.product-detail__card {
-    width: 100%;
-    height: auto;
-    padding: 2rem;
-    border-radius: 0.8rem;
-    background-color: #282623;
-    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-}
-
-.product-detail__card-icon {
-    width: 2.4rem;
-    height: 2.4rem;
-}
-
-.product-detail__card-title {
-    margin: 1.2rem 0;
-    font-size: 1.8rem;
-    text-align: start;
-    color: #FFFFFF;
-}
-
-.product-detail__card-info {
-    text-align: start;
-    color: #BABABA;
-}
-
 /* Start bitcoin baby */
 .main__bitcoin-baby-container {
     width: 100%;
@@ -413,10 +493,55 @@ svg {
 }
 
 .bitcoin-baby__title {
-    font-size: 2.4rem;
-    font-weight: bold;
+    margin: 0;
     text-align: center;
     color: #FFFFFF;
 }
 
 /* Start plans section */
+.main__plans-container {
+    padding: 8rem 1.6rem 6.4rem;
+    text-align: center;
+    background-color: #FAF8F7;
+}
+
+.main__plans-titles-container {
+    -webkit-margin-after: 4.8rem;
+            margin-block-end: 4.8rem;
+}
+
+.main__plans-subtitle {
+    color: #757575;
+}
+
+.plans-container__slider {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: minmax(19rem, 22.3rem) 0.8rem minmax(19rem, 22.3rem) 0.8rem minmax(19rem, 22.3rem);
+    grid-template-columns: repeat(3, minmax(19rem, 22.3rem));
+    -ms-grid-rows: 25.4rem;
+    grid-template-rows: 25.4rem;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    gap: 0.8rem;
+    height: 28.8rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    -ms-scroll-snap-type: x proximity;
+        scroll-snap-type: x proximity;
+}
+
+.plans-container__slider > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.plans-container__slider > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.plans-container__slider > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}

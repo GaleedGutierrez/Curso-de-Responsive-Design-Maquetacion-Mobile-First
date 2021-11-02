@@ -1,0 +1,25 @@
+.product-detail__card {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    background-color: $warm-black-plus-1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail__card-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.product-detail__card-title {
+    margin: 1.2rem 0;
+    font-size: $medium;
+    text-align: start;
+    color: $just-white;
+}
+
+.product-detail__card-info {
+    text-align: start;
+    color: $warm-gray;
+}
