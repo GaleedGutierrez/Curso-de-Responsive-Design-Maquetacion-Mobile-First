@@ -5,8 +5,7 @@
 .main__exchange-container {
     flex-direction: column;
     position: relative;
-    padding: 0 1.6rem;
-    padding-block-start: 6rem;
+    padding: 6rem 1.6rem 5.2rem;
     text-align: center;
     background-color: $off-white;
     @include all-center-flex;
@@ -66,10 +65,75 @@
     transform: rotate(90deg);
 }
 
-.exchange-price-list__arrow-rigth:hover ~ .currency-table-container:last-child {
+.exchange-price-list__arrow-rigth:hover~.currency-table-container:last-child {
     transform: translateX(0);
 }
 
-.exchange-price-list__arrow-rigth:hover ~ .currency-table-container:nth-child(3) {
+.exchange-price-list__arrow-rigth:hover~.currency-table-container:nth-child(3) {
     transform: translateX(-100vw);
 }
+
+/* Start product details */
+
+.main__product-details {
+    position: relative;
+    padding: 6.4rem 1.6rem;
+    text-align: center;
+    background-color: $warm-black;
+}
+
+.product-details__batabit-icon {
+    position: absolute;
+    top: calc(0% - 1.2005rem);
+    left: calc(50% - 2.0285rem);
+    width: 4.057rem;
+    height: 2.401rem;
+}
+
+.product-details__title {
+    margin-block-end: 3.2rem;
+}
+
+.product-details__title-main {
+    margin-block-end: 2.4rem;
+    font-size: $large;
+    color: $just-white;
+}
+
+.product-details__title-secondary {
+    color: $warm-gray;
+}
+
+.product-details__card-container {
+    display: grid;
+    place-items: center;
+    gap: 1.6rem;
+}
+
+.product-detail__card {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    background-color: $warm-black-plus-1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail__card-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.product-detail__card-title {
+    margin: 1.2rem 0;
+    font-size: $medium;
+    text-align: start;
+    color: $just-white;
+}
+
+.product-detail__card-info {
+    text-align: start;
+    color: $warm-gray;
+}
+
+/* Start bitcoin baby */

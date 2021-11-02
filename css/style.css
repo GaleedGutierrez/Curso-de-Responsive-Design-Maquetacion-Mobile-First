@@ -246,9 +246,7 @@ svg {
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    padding: 0 1.6rem;
-    -webkit-padding-before: 6rem;
-            padding-block-start: 6rem;
+    padding: 6rem 1.6rem 5.2rem;
     text-align: center;
     background-color: #FAF8F7;
     display: -webkit-box;
@@ -337,3 +335,71 @@ svg {
     -webkit-transform: translateX(-100vw);
             transform: translateX(-100vw);
 }
+
+/* Start product details */
+.main__product-details {
+    position: relative;
+    padding: 6.4rem 1.6rem;
+    text-align: center;
+    background-color: #201E1C;
+}
+
+.product-details__batabit-icon {
+    position: absolute;
+    top: calc(0% - 1.2005rem);
+    left: calc(50% - 2.0285rem);
+    width: 4.057rem;
+    height: 2.401rem;
+}
+
+.product-details__title {
+    -webkit-margin-after: 3.2rem;
+            margin-block-end: 3.2rem;
+}
+
+.product-details__title-main {
+    -webkit-margin-after: 2.4rem;
+            margin-block-end: 2.4rem;
+    font-size: 2.4rem;
+    color: #FFFFFF;
+}
+
+.product-details__title-secondary {
+    color: #BABABA;
+}
+
+.product-details__card-container {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    gap: 1.6rem;
+}
+
+.product-detail__card {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    background-color: #282623;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail__card-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.product-detail__card-title {
+    margin: 1.2rem 0;
+    font-size: 1.8rem;
+    text-align: start;
+    color: #FFFFFF;
+}
+
+.product-detail__card-info {
+    text-align: start;
+    color: #BABABA;
+}
+
+/* Start bitcoin baby */
