@@ -1,0 +1,21 @@
+.footer__social-media-and-more-container {
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -webkit-margin-start: 5rem;
+            margin-inline-start: 5rem;
+}
+
+.footer__logo-container {
+    -ms-grid-column-align: end;
+        justify-self: end;
+    -webkit-margin-end: 5rem;
+            margin-inline-end: 5rem;
+}
+
+html {
+    font-size: 71.5%;
+}
+
+.bitcoin-baby__title {
+    font-size: 12.5rem;
+}

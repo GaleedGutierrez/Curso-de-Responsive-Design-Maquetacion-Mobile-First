@@ -1,9 +1,10 @@
 @import "./components/faq/faq-tablet";
+@import "./components/global/mixins";
 
-.exchange-price-list__arrow-rigth, 
+.exchange-price-list__arrow-rigth,
 .exchange-price-list__arrow-left {
     display: none;
-} 
+}
 
 .main__exchange-price-list-cointainer {
     gap: 3.2rem;
@@ -16,7 +17,17 @@
 }
 
 .product-details__card-container {
-grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, fit-content(51.2rem));
+    justify-content: center;
+}
+
+.main__bitcoin-baby-container {
+    padding: 0;
+    @include all-center-flex;
+}
+
+.bitcoin-baby__title {
+    font-size: 9.5rem;
 }
 
 .plans-container__slider {

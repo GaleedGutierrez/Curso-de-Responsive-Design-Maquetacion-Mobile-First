@@ -264,8 +264,8 @@ svg {
     padding: 2rem;
     border-radius: 0.8rem;
     background-color: #282623;
-    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0rem 0.4rem 0.8rem rgba(0, 0, 0, 0.16);
+            box-shadow: 0rem 0.4rem 0.8rem rgba(0, 0, 0, 0.16);
 }
 
 .product-detail__card-icon {
@@ -424,8 +424,11 @@ svg {
 .footer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (minmax(auto, 51.2rem))[2];
+    grid-template-columns: repeat(2, minmax(auto, 51.2rem));
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -518,7 +521,7 @@ svg {
             justify-content: center;
     position: relative;
     width: 100%;
-    max-width: 320px;
+    max-width: 32rem;
     overflow-x: hidden;
 }
 

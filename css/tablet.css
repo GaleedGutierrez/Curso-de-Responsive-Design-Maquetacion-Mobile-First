@@ -19,8 +19,28 @@
 }
 
 .product-details__card-container {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (fit-content(51.2rem))[2];
+    grid-template-columns: repeat(2, fit-content(51.2rem));
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.main__bitcoin-baby-container {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.bitcoin-baby__title {
+    font-size: 9.5rem;
 }
 
 .plans-container__slider {

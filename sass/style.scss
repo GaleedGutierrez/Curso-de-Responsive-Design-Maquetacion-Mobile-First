@@ -4,7 +4,7 @@
 @import "./components/cards-about-page/cards-about-page";
 @import "./components/cards-plans/cards-plans";
 @import "./components/faq/faq";
-@import "./components/global/footer";
+@import "./components/footer/footer";
 
 
 .main__exchange-container {
@@ -34,7 +34,7 @@
     justify-content: center;
     position: relative;
     width: 100%;
-    max-width: 320px;
+    max-width: 32rem;
     overflow-x: hidden;
 }
 
